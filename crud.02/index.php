@@ -1,5 +1,5 @@
 <?php
-  require_once("conn.php");
+  require_once("registros.php");
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
     </header>
     <main>
       <h2>Cadastre Seus Funcionários</h2>
-        <form action="cadastro.php?metodo=criar" method="post">
+        <form action="registros.php?metodo=criar" method="post">
           <div class="form-group">
             <label for="">Pessoa: </label>
             <input type="text" name="pessoa">
