@@ -34,20 +34,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
   <body>
-    <main>
+    <header>
+      <h1>Edite O Registro do Funcionário</h1>
+    </header>
+    <main class="form-edit">
+      <h3>Editar</h3>
       <form action="registros.php?metodo=editar" method="post">
         <input type="hidden" name="id" value="<?= $id ?>">
         <div class="form-group">
-          <label for="">Pessoa: </label>
-          <input type="text" name="pessoa" value="<?= $pessoa ?>">
+          <label for="pessoa">Pessoa: </label>
+          <input type="text" name="pessoa" value="<?= $pessoa ?>" maxlength="45" minlength="4" required>
         </div>
         <div class="form-group">
-          <label for="">E-mail: </label>
-          <input type="text" name="email" value="<?= $email ?>">
+          <label for="email">E-mail: </label>
+          <input type="email" name="email" value="<?= $email ?>" required>
         </div>
         <div class="form-group">
-          <label for="">Telefone: </label>
-          <input type="text" name="telefone" value="<?= $telefone ?>">
+          <label for="telefone">Telefone:</label>
+          <input type="text" name="telefone" value="<?= $telefone ?>" required>
         </div>
         <div class="form-group">
           <input type="submit" value="Alterar">
