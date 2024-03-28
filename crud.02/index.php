@@ -1,5 +1,5 @@
 <?php
-  require_once("registros.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,19 @@
         </form>
     </main>  
     <footer>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Pessoa</th>
+            <th>E-mail</th>
+            
+          </tr>
+        </thead>
+        <tbody>
 
+        </tbody>
+      </table>
     </footer>
   </body>
 </html>
