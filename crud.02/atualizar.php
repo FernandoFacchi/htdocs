@@ -51,6 +51,7 @@
         </div>
         <div class="form-group">
           <input type="submit" value="Alterar">
+          <button><a href="index.php">Voltar</a></button>
         </div>
       </form>
     </main>

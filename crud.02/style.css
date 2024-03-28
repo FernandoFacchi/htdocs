@@ -35,3 +35,8 @@ tbody > tr:nth-child(even) {
   background-color: rgb(139, 139, 139);
 
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
