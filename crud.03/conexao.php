@@ -1,15 +1,13 @@
 <?php
-
-  $banco = "registros";
+  $banco = "gestao";
   $servidor = "localhost";
   $usuario = "root";
   $senha = "";
 
-  try{
+  try {
     $conn = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
-  }catch(PDOException $e) {
+
+  } catch (PDOException $e) {
     echo $e->getMessage();
   }
-  // echo "ON";
-  
 ?>
